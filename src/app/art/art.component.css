@@ -1,0 +1,583 @@
+body {
+    background-image: linear-gradient(120deg, blue 50%, magenta 50%);
+    font-family: 'Roboto', sans-serif;
+    background-color: #E6E6FA
+}
+
+header {
+    height: 120px;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+header div a,
+header div a:active,
+header div a:visited,
+header div a:hover,
+header div a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+header div h1 {
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+
+.navbar {
+    padding-left: 30px;
+    border: none;
+    border-radius: 0;
+    background-color: #222;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    font-size: 15px;
+    color: white !important;
+    transition-duration: 300ms;
+}
+
+.navbar ul li a:hover {
+    color: magenta !important;
+    transition-duration: 300ms;
+}
+
+.navbar ul li a:active {
+    color: magenta !important;
+    transition-duration: 300ms;
+}
+
+.navbar ul li a:focus {
+    color: magenta !important;
+    transition-duration: 300ms;
+}
+
+footer {
+    margin-top: 100px;
+    height: 150px;
+    background-color: black;
+    color: white;
+}
+
+footer ul {
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer ul li a,
+footer ul li a:visited,
+footer ul li a:focus,
+footer ul li a:active {
+    text-decoration: none;
+    color: #CCC;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #999;
+}
+
+footer ul li a:visited {
+    text-decoration: none;
+}
+
+footer ul li a:focus {
+    text-decoration: none;
+}
+
+footer ul li a:link {
+    text-decoration: none;
+}
+
+.search {
+    height: 120px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.events {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+.events h1 {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.thumbnail img {
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    border: 0;
+}
+
+.thumbnail .caption h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.thumbnail .caption a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.thumbnail .caption a:hover {
+    color: #999;
+}
+
+.thumbnail .caption p {
+    line-height: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.imageContainer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    header div h1 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 736px) {
+    header {
+        padding-left: 60px;
+    }
+
+    nav {
+        padding-left: 30px;
+    }
+}
+
+.sectionSubHeader {
+    margin-bottom: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.event-list {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    margin-left: 0;
+    padding: 0;
+}
+
+.event-list .info h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.eventNotFound {
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.eventNotFound .thumbnail {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    border-radius: 3px;
+    border-style: none;
+    height: 300px;
+}
+
+.eventNotFound .thumbnail h3 {
+    font-size: 27px;
+    color: white;
+    font-weight: bold;
+    margin-top: 0px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventsAside {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.eventsAside .thumbnail {
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    border-style: none;
+}
+
+.eventsAside .thumbnail .caption h3 {
+    margin-top: 0;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.eventsAside .thumbnail .caption p {
+    font-size: 12px;
+    color: white;
+    line-height: 8px;
+}
+
+.eventsAside .thumbnail .caption p:nth-child(2) {
+    font-weight: bold;
+}
+
+.titleLocalEvents {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000000;
+    border-radius: 3px;
+}
+
+.titleLocalEvents h3 {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.event-list img {
+    height: 40px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.pageContent {
+    min-height: 270px;
+}
+
+.event-list>li {
+    background-color: white;
+    box-shadow: 0px 0px 5px #333333;
+    box-shadow: 0px 0px 5px rgba(182, 102, 210, 0.7);
+    padding: 0px;
+    margin: 0px 0px 20px;
+}
+
+.event-list>li>time {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    background-color: black;
+    border-right: 3px solid white;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.event-list>li:nth-child(even)>time {
+    background-color: #a552a7;
+}
+
+.event-list>li>time>span {
+    display: none;
+}
+
+.event-list>li>time>.day {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    font-size: 50pt;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.event-list>li time>.month {
+    display: block;
+    font-size: 24pt;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.event-list>li>img {
+    width: 100%;
+}
+
+.event-list>li>.info {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.event-list>li>.info>.title {
+    font-size: 17pt;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.event-list>li>.info>.desc {
+    font-size: 13pt;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.event-list>li>.info>ul,
+.event-list>li>.social>ul {
+    display: table;
+    list-style: none;
+    margin: 10px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.event-list>li>.social>ul {
+    margin: 0px;
+}
+
+.event-list>li>.info>ul>li,
+.event-list>li>.social>ul>li {
+    display: table-cell;
+    cursor: pointer;
+    color: #1e1e1e;
+    font-size: 11pt;
+    font-weight: 300;
+    padding: 3px 0px;
+}
+
+.event-list>li>.info>ul>li>a {
+    display: block;
+    width: 100%;
+}
+
+div.info a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.event-list>li>.social>ul>li {
+    padding: 0px;
+}
+
+.event-list>li>.social>ul>li>a {
+    padding: 3px 0px;
+}
+
+.event-list>li>.info>ul>li:hover,
+.event-list>li>.social>ul>li:hover {
+    color: #1e1e1e;
+    background-color: #c8c8c8;
+}
+
+.facebook a,
+.twitter a,
+.homepage a {
+    display: block;
+    width: 100%;
+    color: #CCC !important;
+}
+
+.twitter a {
+    color: #CCC !important;
+}
+
+.homepage a {
+    color: #CCC !important;
+}
+
+.facebook:hover a {
+    color: #999 !important;
+    background-color: #CCC !important;
+}
+
+.twitter:hover a {
+    color: #999 !important;
+    background-color: #CCC !important;
+}
+
+.homepage:hover a {
+    color: #999 !important;
+    background-color: #CCC !important;
+}
+
+@media (max-width: 768px) {
+    .event-list>li>img {
+        display: block;
+        height: 200px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .event-list>li>time {
+        border-right: none;
+        border-bottom: 3px solid white;
+    }
+}
+
+@media (min-width: 768px) {
+    .event-list>li {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 0px;
+    }
+
+    .event-list>li>time,
+    .event-list>li>img {
+        display: inline-block;
+    }
+
+    .event-list>li>time,
+    .event-list>li>img {
+        width: 120px;
+        float: left;
+    }
+
+    .event-list>li>.info {
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+
+    .event-list>li>time,
+    .event-list>li>img {
+        width: 120px;
+        height: 120px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .event-list>li>.info {
+        position: relative;
+        height: 120px;
+        text-align: left;
+        padding-right: 40px;
+    }
+
+    .event-list>li>.info>.title,
+    .event-list>li>.info>.desc {
+        padding: 0px 10px;
+    }
+
+    .event-list>li>.info>ul {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .event-list>li>.social {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: block;
+        width: 40px;
+    }
+
+    .event-list>li>.social>ul {
+        border-left: 1px solid #e6e6e6;
+    }
+
+    .event-list>li>.social>ul>li {
+        display: block;
+        padding: 0px;
+    }
+
+    .event-list>li>.social>ul>li>a {
+        display: block;
+        width: 40px;
+        padding: 10px 0px 9px;
+    }
+
+    div.info h2 {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    div.info a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+}
+
+.eventCardInfo {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.eventCardInfo h2 {
+    margin-top: 5px;
+}
+
+p.buyLinks {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.name h1 {
+    margin-top: 5px;
+}
+
+.miniInfo {
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.imgEvent img {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 10px;
+}
+
+.map {
+    margin-bottom: 10px;
+}
+
+.eventCardInfo p {
+    margin-left: 10px;
+}
+
+.miniInfo span {
+    font-weight: bold;
+}
+
+.eventCardInfo a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
